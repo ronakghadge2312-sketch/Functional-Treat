@@ -1,9 +1,8 @@
 
-# 1. Data Input & Initialization
+# 1. Data Input 
 
 marks = [21, 35, 38, 40, 45, 50, 52, 55, 58, 60,
          62, 70, 72, 75, 80, 82, 85, 90, 96, 98]
-
 
 # 2. Basic Analysis
 
@@ -12,7 +11,6 @@ highest = max(marks)
 lowest = min(marks)
 total_marks = sum(marks)
 average = total_marks / total_students
-
 
 # Count Passed and Failed Students
 
@@ -42,10 +40,9 @@ print("Failed:", failed)
 print("Students Scored 100:", hundred)
 print("Pass Percentage:", pass_percentage)
 
-# 3. Advanced Built-in Function Usage
+# 3. Advanced Built-in Function 
 
 ascending = sorted(marks)
-
 descending = sorted(marks, reverse=True)
 
 print("Sorted Marks:", ascending)
@@ -63,7 +60,7 @@ print("Second Lowest:", second_lowest)
 
 all_passed = all(mark >= 40 for mark in marks)
 
-# Check if any student failed
+# Check if any student fail
 
 any_failed = any(mark < 40 for mark in marks)
 
@@ -74,12 +71,10 @@ print("Any Student Failed:", any_failed)
 # 4. Optional Task
 
 search = int(input("Enter a mark to search: "))
-
 if search in marks:
     print("Mark exists in the list.")
 else:
     print("Mark does not exist in the list.")
-
 
 # 5. Grade Distribution
 
